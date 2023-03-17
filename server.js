@@ -15,11 +15,8 @@ var options = {
 }
 app.use(express.static('build', options))
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT 
 
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(__dirname, './index.html'), (err) => err && res.status(500).send(err));
-  });
 
 app.listen(port, function() {
   console.log(`React app listening at http://localhost:${port}`)
