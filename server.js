@@ -1,4 +1,4 @@
-import { pkg } from 'express';
+import pkg from 'express';
 const { express } = pkg
 import path from 'path';
 const app = express()
